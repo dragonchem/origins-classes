@@ -1,6 +1,6 @@
 {
-    "replace": false,
-    "origins": [
-      "chem:first_species"
-    ]
+  "replace": false,
+  "origins": [
+    "first-species:first-species"
+  ]
 }

@@ -1,0 +1,10 @@
+{
+    "powers": [
+        "origins:fire_immunity",
+        "origins:elytra",
+        "origins:throw_ender_pearl",
+        "origins:fresh_air"
+    ],
+    "icon": "minecraft:command_block",
+    "name": "abc"
+}
