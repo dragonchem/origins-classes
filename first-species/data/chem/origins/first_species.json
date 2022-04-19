@@ -1,0 +1,10 @@
+{
+    "powers": [
+        "origins:fall_immunity"
+    ],
+    "icon": "minecraft:command_block",
+    "order": 4,
+    "impact": 2,
+    "name": "test",
+    "description": "testing this fucking bullshit"
+}
