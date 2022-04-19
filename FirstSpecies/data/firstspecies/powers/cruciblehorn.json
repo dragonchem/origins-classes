@@ -1,0 +1,135 @@
+{
+    "type": "origins:active_self",
+    "name": "Whoosh!",
+    "description": "You can perfrom an incredible leap into the air!",
+    "key": 
+	{
+        "key": "key.pickItem"
+    },
+    "entity_action":{
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:delay",
+                "ticks": 15,
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:add_velocity",
+                            "space": "local_horizontal",
+                            "z": 1.5
+                        }, 
+                        {
+                            "type": "origins:add_velocity",
+                            "space": "world",
+                            "y": 0.15
+                        }, 
+                        {
+                            "type": "origins:explode",
+                            "power": 5,
+                            "destruction_type": "none",
+                            "damage_self": false,
+                            "create_fire": false
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:explode",
+                                        "power": 5,
+                                        "destruction_type": "none",
+                                        "damage_self": false,
+                                        "create_fire": false
+                                    },
+                                    {
+                                        "type": "origins:delay",
+                                        "ticks": 1,
+                                        "action": {
+                                            "type": "origins:and",
+                                            "actions": [
+                                                {
+                                                    "type": "origins:explode",
+                                                    "power": 5,
+                                                    "destruction_type": "none",
+                                                    "damage_self": false,
+                                                    "create_fire": false
+                                                },
+                                                {
+                                                    "type": "origins:delay",
+                                                    "ticks": 1,
+                                                    "action": {
+                                                        "type": "origins:and",
+                                                        "actions": [
+                                                            {
+                                                                "type": "origins:explode",
+                                                                "power": 5,
+                                                                "destruction_type": "none",
+                                                                "damage_self": false,
+                                                                "create_fire": false
+                                                            },
+                                                            {
+                                                                "type": "origins:delay",
+                                                                "ticks": 1,
+                                                                "action": {
+                                                                    "type": "origins:and",
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "origins:explode",
+                                                                            "power": 5,
+                                                                            "destruction_type": "none",
+                                                                            "damage_self": false,
+                                                                            "create_fire": false
+                                                                        },
+                                                                        {
+                                                                            "type": "origins:delay",
+                                                                            "ticks": 1,
+                                                                            "action": {
+                                                                                "type": "origins:and",
+                                                                                "actions": [
+                                                                                    {
+                                                                                        "type": "origins:explode",
+                                                                                        "power": 5,
+                                                                                        "destruction_type": "none",
+                                                                                        "damage_self": false,
+                                                                                        "create_fire": false
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:slowness",
+                    "duration": 15,
+                    "amplifier": 99
+                }
+            }
+        ]
+    },
+    "cooldown": 10,
+    "hud_render": 
+	{
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "should_render": true,
+        "bar_index": 14
+    }
+}

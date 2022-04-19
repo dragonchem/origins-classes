@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+        "type": "origins:damage",
+        "amount": 4,
+        "source": {
+            "name": "wither",
+            "bypasses_armor": true
+        }
+    },
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "wither"
+    },
+    "cooldown": 1
+}

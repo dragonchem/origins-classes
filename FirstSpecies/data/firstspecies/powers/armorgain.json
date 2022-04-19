@@ -1,0 +1,9 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Armor increase",
+        "attribute": "minecraft:generic.armor",
+        "value": 12,
+        "operation": "addition"
+    }
+}

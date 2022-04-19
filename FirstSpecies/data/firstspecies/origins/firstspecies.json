@@ -1,0 +1,15 @@
+{
+    "powers": [
+        "firstspecies:healthgain",
+        "firstspecies:armorgain",
+        "firstspecies:movementspeed",
+        "firstspecies:restrictarmor",
+        "firstspecies:witherweakness",
+        "firstspecies:cruciblehorn"
+    ],
+    "icon": "minecraft:command_block",
+    "order": -1,
+    "impact": 1,
+    "name": "First species",
+    "description": "This is wild"
+}
